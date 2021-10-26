@@ -8,7 +8,7 @@ class Car {
         console.log(this.name+" is driving");
     }
     stop(){
-        console.log(this.name+" is stoping");
+        console.log(this.name+" is stopping");
     }
     turningRight(){
         console.log(this.name+" is turning right")

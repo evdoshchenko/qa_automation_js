@@ -19,7 +19,7 @@ console.log(isEqual);
 if (car.year>2005 && car.color === "grey") {
     console.log("car is new enough")
 } else {
-    console.log("zalupa tachka")}
+    console.log("car is old")}
 ;
 
 let text="";

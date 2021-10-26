@@ -15,16 +15,16 @@ greet("John","Doe");
 let summary = addOfTwo(2,4);
 console.log(summary);
 
-const people = ["Ivan","Eblan","Lox"];
+const people = ["Leo", "John","Michael"];
 
 people.pop();
 
 console.log(people);
-people.push("Soska");
+people.push("Lana");
 console.log(people);
 
 people.shift();
 
 console.log(people);
-people.unshift("Soska");
+people.unshift("Lana");
 console.log(people);
