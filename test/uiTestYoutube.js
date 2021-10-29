@@ -9,17 +9,15 @@ describe("", () => {
         let driver = await new Builder().forBrowser('chrome').build();
 
         try {
-            await driver.get('http://www.google.com/ncr');
+            await driver.get('https://www.youtube.com');
 
-            let locator = By.name('q');
+            let locator = By.id('search-container');
 
-            let element = await driver.findElement(locator);
+            let element = await driver.findElement(locator[1]);
             element.sendKeys('webdriver', Key.RETURN);
-            // element.sendKeys('webdriver');
-            // element.Key.RETURN;
 
 
-            await driver.wait(until.titleIs('webdriver - Поиск в Google'), 5000);
+            await driver.wait(until.titleContains('webdri2ver'), 10000);
         } finally {
             await driver.quit();
         }

@@ -4,7 +4,7 @@ import ChromeDriver from 'chromedriver';
 
 
 describe("", ()=> {
-
+    this.timeout(10000);
     it("", async ()=> {
         let driver = await new Builder().forBrowser('chrome').build();
 
